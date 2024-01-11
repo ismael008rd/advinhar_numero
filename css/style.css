@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Nerko+One&family=Righteous&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    background-color: #261225;
+}
+.chute{
+    background-color: rgb(31, 12, 12);
+  
+    padding: 10px;
+}
+.chute h1{
+    color: #ca7174;
+}
+
+.numero_digitar input{
+    outline: none;
+    background-color: #151229;
+    color:#F77E0E ;
+    padding: 15px;
+    border:3px solid #8A2FAA;
+}
+
+.btn{
+    width: 130px;
+    cursor: pointer;
+    border: none;
+    background-color: red;
+    color: white;
+    border-radius: 40px;
+    height: 50px;
+}
+.acerto{
+    height: 400px;
+    display: none;
+    background-color:rgba(45,111,11,0.1);
+    padding: 15px;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+.infor_numero{
+    /* background-color: red; */
+    width:300px;
+    font-family: 'Nerko One', cursive;
+    color: rgb(211, 85, 85);
+    font-size: .8em;
+    padding: 5px;
+}
+
+.caixa_numeroAcer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: 'Luckiest Guy', cursive;
+    color: rgb(10, 208, 10);
+    font-size: .9em;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    /* background-color: green;background-color: green; */
+}
+
+.numeroPensado{
+    height: 90px;
+    align-items: center;
+    font-weight: 900;
+    font-size: 5em;
+    justify-content: center;
+    display: flex;
+    
+    text-align: center;
+    width: 80px;
+    color: orange;
+    background-color: rgb(47, 41, 41);
+}
+
+.sumir_none{
+    display:flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.icones_chance{
+    display: flex;
+    gap: 20px;
+}
+
+.chance{
+   display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.subirNome{
+    display: none;
+    width: 200px;
+    height: auto;
+    padding: 10px;
+    background-color: #1b0d0d;
+    color: #e36a6a;
+
+}
+.subirNome h3{
+    font-size: 1.6em;
+}
+.gameOver{
+    width: 300px;
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    /* background-color: blue; */
+    height: 300px;
+}
+
+.vocPerd{
+    width: 200px;
+    height:auto;
+    text-transform: uppercase;
+    color: rgb(233, 0, 0);
+    font-family: 'Nerko One', cursive;
+    font-size: 1.7em;
+    padding: 10px;
+    background-color: rgb(14, 3, 3);
+}
+
+.jogarNovamente button{
+    background-color: #8e0d65;
+    border-radius: 10px;
+    color: white;
+    border:none;
+    cursor: pointer;
+    font-family: 'Righteous', sans-serif;
+    text-transform: uppercase;
+    font-size: 1em;
+    width:170px;
+    padding: 10px;
+}
+.jogarNovamente button:hover{
+    background-color: #b81584;
+    border: 3px solid #234c67;
+    color: black;
+}
+
+.btn_jogar{
+    background-color: red;
+}
+
+/* .numero_digitar{
+    display: none;
+}
+
+.btn_button{
+    display: none;
+} */
