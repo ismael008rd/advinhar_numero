@@ -8,6 +8,7 @@ const numAcerto = document.querySelector('.num_acerto')
 const caixa_acerto = document.querySelector('.acerto')
 console.log(conte)
 const btnJogarNovamente = document.querySelector('.btn_jogar')
+const infChutarh3=document.querySelector('.chute')
 
 const btn_dGameOver = document.querySelector('.btn_jogarGame')
 
@@ -24,6 +25,8 @@ console.log(numeroPensado)
 const gameOver=document.querySelector('.gameOver')
 
 function play(){
+
+    infChutarh3.style.display='block'
     if(inputValue.value==''){
      alert('estar vazio')
     }
@@ -35,6 +38,7 @@ function play(){
      conte.children[chance].style.backgroundColor='red'
      verValor(numeroPensado,inputValue.value,chanceMort)
     }else if(inputValue.value==numeroPensado && !(inputValue.value=='')){
+        infChutarh3.style.display='none'
         console.log('sim é esse número')
        sumir_none.style.display='none'
        caixa_acerto.style.display='flex'
@@ -69,12 +73,13 @@ function GameOver(){
         }
  
        })
+    infChutarh3.style.display='none'
     sumir_none.style.display='none'
     gameOver.style.display='flex'
   
 }
 function jogarAgain(){
- 
+    infChutarh3.style.display='block'
     console.log('jogar novamente')
     gameOver.style.display='none'
     sumir_none.style.display='flex'
