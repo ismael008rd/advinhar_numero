@@ -79,6 +79,7 @@ function GameOver(){
   
 }
 function jogarAgain(){
+   
     infChutarh3.style.display='block'
     console.log('jogar novamente')
     gameOver.style.display='none'
@@ -106,13 +107,13 @@ const container_numeroDigitado = document.querySelector('.numero_digitar')
 
 
 function verValor(pensado, chutado, chance){
-   if(chutado>pensado){
+   if(chutado>pensado && !(chance==0)){
       let nomeI=`você chutou muito alto você só tem mais ${chance} chance`
       atulizarInfoma()
        
       AtulizarNome(nomeI)
  
-   }else if(chutado<pensado){
+   }else if(chutado<pensado && !(chance==0)){
     let nomeI=`você chutou muito baixo você só tem mais ${chance} chance`
     atulizarInfoma()
     AtulizarNome(nomeI)
@@ -120,7 +121,7 @@ function verValor(pensado, chutado, chance){
    }
    if(chance==0){
     nomeI=''
-    AtulizarNome(nomeI)
+    
     console.log('morreu')
    GameOver()
    }
