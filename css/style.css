@@ -67,7 +67,7 @@
     /* background-color: red; */
     width:300px;
     font-family: 'Nerko One', cursive;
-    color: rgb(211, 85, 85);
+    color: rgb(241, 10, 10);
     font-size: .8em;
     padding: 5px;
 }
@@ -97,6 +97,9 @@
     width: 80px;
     color: orange;
     background-color: rgb(47, 41, 41);
+}
+.num_acerto{
+    display: block;
 }
 
 .sumir_none{
@@ -175,6 +178,10 @@
 
 .btn_jogar{
     background-color: red;
+}
+
+.h3_inform{
+    text-transform: uppercase;
 }
 
 /* .numero_digitar{
